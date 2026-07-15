@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-200;
+}
+
+body {
+  @apply bg-dark-bg text-gray-100 font-sans;
+}
+
+.glass-effect {
+  @apply backdrop-blur-md bg-dark-card/80 border border-dark-border;
+}
+
+.neon-border {
+  @apply border-2 border-neon-pink;
+}
+
+.neon-shadow {
+  @apply shadow-lg shadow-neon-pink/20;
+}
+
+.button-primary {
+  @apply px-4 py-2 bg-neon-pink text-black font-bold rounded-lg hover:bg-pink-500 neon-shadow cursor-pointer;
+}
+
+.button-secondary {
+  @apply px-4 py-2 bg-dark-card border border-neon-pink text-neon-pink rounded-lg hover:bg-pink-900/20 cursor-pointer;
+}
+
+.card {
+  @apply bg-dark-card border border-dark-border rounded-lg p-4;
+}
+
+.progress-bar {
+  @apply w-full bg-dark-border rounded-full h-2 overflow-hidden;
+}
+
+.progress-fill {
+  @apply h-full bg-gradient-to-r from-neon-pink to-neon-yellow;
+}
